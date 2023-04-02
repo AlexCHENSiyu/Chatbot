@@ -1,0 +1,63 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thanks
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Inquiry
+  - Inquiry_Usability_Testing
+  - Inquiry_stupid_question
+  - Inquiry_lab2_question
+
+responses:
+  utter_greet:
+  - text: "I'm fine, thanks. And you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "./images/tiger.jpg"
+
+  utter_cheer_up2:
+  - text: "But I believe you don't have much time to be sad. Think about your Deadline! Don't give up!"
+
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_happy:
+  - text: "Great, it seems that you still enjoy your coming project 3, final exam, and video paper."
+
+  utter_goodbye:
+  - text: "See you lala! :)"
+
+  utter_iamabot:
+  - text: "I'm a bot here to help you with your academic welling?"
+
+  utter_answer:
+  - text: "Sure. Please."
+
+  utter_answer_Usability_Testing:
+  - text: "Usability Testing is a formal method for evaluating whether a design is learnable, efficient, memorable, can reduce errors, and meets users' expectations."
+  
+  utter_answer_Usability_Testing_Picture:
+  - text: "You can find this definition in Canvas COMP4461 [HCI-09-EvaluationUsability.pdf](./file/HCI-09.pdf) Page 9:"
+    image: "./images/Usability_Testing_and_User_Study_P.9.png"
+
+  utter_answer_Usability_Testing_Video:
+  - text: "Or watch professor's explanation through this [zoom link](./video/demo.mp4)"
+
+  utter_answer_stupid_question:
+  - text: "I don't find similar question in my database. We have proposed this question to your course TA. Please wait for response."
+
+  utter_answer_lab_2:
+  - text: "Do you mean: \n
+  [Project 2 Lab1 Instruction](https://github.com/Dingdong-LIU/Lab1_Chatbot_Rasa) \n
+  [Project 2 Lab2 Instruction](https://github.com/Dingdong-LIU/Lab2_Voice_Agent)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
